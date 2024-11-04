@@ -1,0 +1,149 @@
+[
+  {
+    "ContainingType": "SignInClick.Controllers.DocumentsController",
+    "Method": "CreateDocument",
+    "RelativePath": "api/Documents/{envelopeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "envelopeId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SignInClick.Controllers.EnvelopesController",
+    "Method": "GetEnvelopes",
+    "RelativePath": "api/Envelopes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SignInClick.Controllers.EnvelopesController",
+    "Method": "CreateEnvelope",
+    "RelativePath": "api/Envelopes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "SignInClick.DTOS.CreateEnvelopeRequestDTOs",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SignInClick.Controllers.EnvelopesController",
+    "Method": "GetEnvelopeById",
+    "RelativePath": "api/Envelopes/{envelopeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "envelopeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SignInClick.Controllers.NotificationsController",
+    "Method": "SendNotification",
+    "RelativePath": "api/Notifications/{envelopeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "envelopeId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "SignInClick.Controllers.NotificationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SignInClick.Controllers.SignerNotificationsController",
+    "Method": "SendSignerNotification",
+    "RelativePath": "api/SignerNotifications/{envelopeId}/signers/{signerId}/notifications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "envelopeId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "signerId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "SignInClick.Controllers.NotificationRequestSigners",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SignInClick.Controllers.SignersController",
+    "Method": "CreateSigner",
+    "RelativePath": "api/Signers/{envelopeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "envelopeId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "requestDto",
+        "Type": "SignInClick.DTOS.CreateSignerRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SignInClick.Controllers.WebhookCallbackController",
+    "Method": "CreateWebhook",
+    "RelativePath": "api/WebhookCallback/webhook/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SignInClick.Controllers.CreateWebhookRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
